@@ -7,20 +7,23 @@ import java.util.Scanner;
 public class HelloWorld {
     public static void main(String[] args) {
 
+        System.out.println("Hello, World!");
+
         // 7. Modificar e Re-executar o Programa
+        System.out.println("\n7. Modificar e Re-executar o Programa");
 
         Date dataAtual = new Date();
         SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
 
-        String Sdata = formatador.format(dataAtual);
+        String sData = formatador.format(dataAtual);
 
         System.out.print("Olá Mundo!! ");
 
-        System.out.printf("Meu nome é Rachel e hoje é dia %s.\n", Sdata);
+        System.out.printf("Meu nome é Rachel e hoje é dia %s.\n", sData);
 
 
-        System.out.println();
         //8. Usar Variáveis e Tipos de Dados
+        System.out.println("\n8. Usar Variáveis e Tipos de Dados");
 
         int numInt = 2_000_000_000;
 
@@ -39,8 +42,8 @@ public class HelloWorld {
         System.out.println("char: " + textChar);
 
 
-        System.out.println();
-        // Ler Entrada do Usuário
+        //9. Ler Entrada do Usuário
+        System.out.println("\n9. Ler Entrada do Usuário");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -52,5 +55,15 @@ public class HelloWorld {
 
         System.out.printf("Nome: [%s], Idade: [%d]\n", nome, idade);
 
+
+        // 10. Depurar Código
+        System.out.println("\n10. Depurar Código");
+
+        int numA = 5;
+        int numB = 2;
+
+        double result = numA / (double) numB;
+
+        System.out.printf("Resultado esperado: 2,5 \nResultado obtido: %.1f", result);
     }
 }
